@@ -78,7 +78,8 @@ class QuizGame:
                 print("rätt svar")
                 self.score += 1
             else:
-                print(f"fel svar, rätt svar {question_data['answer']}: {question_data['option'][question_data['answer'] - 1]}")
+                print(f"Fel svar! Rätt svar var alternativ {question_data['answer']}: {question_data['options'][question_data['answer'] - 1]}")
+
 
                 
         print(f"\nSpelet är slut! Din poäng: {self.score} av {len(self.questions)}.")
